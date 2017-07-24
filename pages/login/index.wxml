@@ -1,11 +1,11 @@
 <view class="login-container">
 	<view class="login" wx:if="{{ !logged }}">
 		<view class="app-info">
-			<image class="app-logo" src="http://placekitten.com/64/64" />
-			<text class="app-name">小商城测试</text>
+			<image class="app-logo" src="../../assets/images/qsc.jpg" />
+			<text class="app-name">普洱青盛</text>
 		</view>
 		<view class="alert">
-			<view class="alert-title">网页由该小程序开发，请确认授权以下信息</view>
+			<view class="alert-title">网页由该普洱青盛开发，请确认授权以下信息</view>
 			<view class="alert-desc">
 				<view class="alert-text">获得你的公开信息（昵称、头像等）</view>
 			</view>
