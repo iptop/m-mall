@@ -13,7 +13,7 @@ Page({
     	token && setTimeout(this.goIndex, 1500)
     },
     login() {
-    	this.signIn(this.goIndex)
+      this.wechatSignUp(this.goIndex)
     },
     goIndex() {
     	App.WxService.switchTab('/pages/index/index')
