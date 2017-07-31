@@ -112,7 +112,7 @@ Page({
     		const data = res.data
     		console.log(data)
     		if (data.meta.code == 0) {
-    			App.WxService.removeStorageSync('token')
+    			App.WxService.removeStorageSync('Token')
     			App.WxService.redirectTo('/pages/login/index')
     		}
     	})

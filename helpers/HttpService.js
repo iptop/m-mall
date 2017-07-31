@@ -22,8 +22,8 @@ class HttpService extends WxRequest {
             request(request) {
             	request.header = request.header || {}
             	request.header['content-type'] = 'application/json'
-                if (request.url.indexOf('/api') !== -1 && wx.getStorageSync('token')) {
-                    request.header.Authorization = 'Bearer ' + wx.getStorageSync('token')
+                if (request.url.indexOf('/api') !== -1 && wx.getStorageSync('Token')) {
+                    request.header.Authorization = 'Bearer ' + wx.getStorageSync('Token')
                 }
                 wx.showLoading({
                     title: '加载中', 
@@ -37,7 +37,7 @@ class HttpService extends WxRequest {
             response(response) {
             	wx.hideLoading()
             	if(response.statusCode === 401) {
-                    wx.removeStorageSync('token')
+                    wx.removeStorageSync('Token')
                     wx.redirectTo({
                         url: '/pages/login/index'
                     })
