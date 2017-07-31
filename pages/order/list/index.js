@@ -25,7 +25,7 @@ Page({
                     _id: 'submitted',
                 },
                 {
-                    name: '已确认',
+                    name: '已支付',
                     _id: 'confirmed',
                 },
                 {
