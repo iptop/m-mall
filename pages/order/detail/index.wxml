@@ -48,9 +48,9 @@
 </view>
 
 
-<view wx:if="order.status='submitted'" class="weui-panel weui-panel_access">
+<view wx:if="{{order.item.status=='submitted'}}" class="weui-panel weui-panel_access">
     <view class="weui-panel__bd">
-    <button type="primary" bindtap="primary">立即支付</button>
+     <button type="primary" bindtap="primary">立即支付</button> 
     </view>
 </view>
 

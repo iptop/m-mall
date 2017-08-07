@@ -17,6 +17,7 @@ class HttpService extends WxRequest {
 			cart        : '/cart', 
 			address     : '/address', 
 			order       : '/order', 
+      unifiedorder: '/unifiedorder'
         }
         this.interceptors.use({
             request(request) {
@@ -180,6 +181,12 @@ class HttpService extends WxRequest {
 			data: params,
 		})
 	}
+
+  postUnifiedorder(params){
+    return this.postRequest(this.$$path.unifiedorder, {
+      data: params,
+    })
+  }
 
 	putOrder(id, params) {
 		return this.putRequest(`${this.$$path.order}/${id}`, {
